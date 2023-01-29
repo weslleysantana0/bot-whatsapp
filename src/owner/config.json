@@ -1,6 +1,6 @@
 {
     "port": 4044,
-    "websocket_port": 3033,
+    "websocket_port": 3030,
     "login": "wesley",
-    "password": "@Wss2207"
+    "password": "@wss2207"
 }

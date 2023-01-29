@@ -2,15 +2,12 @@ const help = (p) => {
 return `╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ┋ ⚡ 𝙋𝙍𝙄𝙉𝘾𝙄𝙋𝘼𝙄𝙎 ⚡
 ┋
-┋ *${p}basemd*
-┋ *${p}painel* 
 ┋ ${p}listblockcmd
 ┋ ${p}level (n/a, num) 
 ┋ ${p}listpalavra 
 ┋ ${p}info 
 ┋ ${p}ajuda 
 ┋ ${p}help 
-┋ ${p}oficialcriador 
 ┋ ${p}comandos 
 ┋ ${p}menulite 
 ┋ ${p}menu 
@@ -78,6 +75,7 @@ return `╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ┋ ${p}unblock (num)
 ┋ ${p}tm (txt)
 ┋ ${p}tmgroups (txt)
+┋ ${p}adsmode (1 or 0) 
 ╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╯
 
 ╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
@@ -219,11 +217,9 @@ return `╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ┋ ${p}gmaps (txt)
 ┋ ${p}pensador (txt)
 ┋ ${p}thumbzilla (txt)
-┋ ${p}xvideos (txt)
 ┋ ${p}xanimu (txt)
 ┋ ${p}rule34 (txt)
 ┋ ${p}fapster (txt)
-┋ ${p}xnxx (txt)
 ┋ ${p}thumbzilla (txt)
 ┋ ${p}searchanime (print de anime)
 ╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╯
@@ -374,36 +370,6 @@ return `╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ┋ ${p}beatiful 
 ┋ ${p}affect 
 ┋ ${p}ad 
-╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╯
-
-╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
-┋  😈 𝙋𝙊𝙍𝙉𝙊 😈
-┋ ${p}nhentai ❮code❯
-┋ ${p}nsfw (1 or 0) 
-┋ ${p}randomhentai  
-┋ ${p}nsfwneko
-┋ ${p}public
-┋ ${p}orgy
-┋ ${p}pantsu
-┋ ${p}glasses
-┋ ${p}cuckold
-┋ ${p}thighs
-┋ ${p}pussy
-┋ ${p}ahegao
-┋ ${p}uniform
-┋ ${p}gangbang
-┋ ${p}tentacles
-┋ ${p}manga
-┋ ${p}incest
-┋ ${p}creampie
-┋ ${p}anal  
-┋ ${p}yuri 
-┋ ${p}hentainekogif    
-┋ ${p}nsfwfeet  
-┋ ${p}girlmasturbate 
-┋ ${p}eroneko
-┋ ${p}erokitsune 
-┋ ${p}spank
 ╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╯
 
 ╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
@@ -659,11 +625,9 @@ ${level}
 *${p}gmaps _mensagem_*
 *${p}pensador _mensagem_*
 *${p}thumbzilla _mensagem_*
-*${p}xvideos _mensagem_*
 *${p}xanimu _mensagem_*
 *${p}rule34 _mensagem_*
 *${p}fapster _mensagem_*
-*${p}xnxx _mensagem_*
 *${p}thumbzilla _mensagem_*
 *${p}searchanime _marcar print de anime_*
 
@@ -793,46 +757,19 @@ ${deviceTypeName}
 ${memberType}
 ${level}
 
-*𝐒𝐞𝐣𝐚 𝐛𝐞𝐦-𝐯𝐢𝐧𝐝𝐨 𝐚𝐨 𝐦𝐞𝐧𝐮 +𝟏𝟖, 𝐚𝐪𝐮𝐢 𝐞𝐧𝐜𝐨𝐧𝐭𝐫𝐚 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐝𝐞 𝐩𝐨𝐫𝐧𝐨𝐠𝐫𝐚𝐟𝐢𝐚, 𝐪𝐮𝐞 𝐞𝐧𝐯𝐢𝐚 𝐢𝐦𝐚𝐠𝐞𝐧𝐬 𝐞 𝐠𝐢𝐟 𝐝𝐞 𝐩𝐨𝐫𝐧𝐨, 𝐩𝐞𝐬𝐪𝐮𝐢𝐬𝐚 𝐞 𝐛𝐚𝐢𝐱𝐚 𝐯í𝐝𝐞𝐨 𝐞𝐦 𝐇𝐃 𝐝𝐞 𝐬𝐢𝐭𝐞𝐬 +𝟏𝟖*
+*𝐒𝐞𝐣𝐚 𝐛𝐞𝐦-𝐯𝐢𝐧𝐝𝐨 𝐚𝐨 𝐦𝐞𝐧𝐮*
 
-*😈🔞 𝐏𝐎𝐑𝐍𝐎 🔞😈*
+*😈*
 
-*${p}nhentai _código nhentai_*
-*${p}nsfw _1 ou 0_*
-*${p}randomhentai*
-*${p}nsfwneko*
-*${p}public*
-*${p}orgy*
-*${p}pantsu*
-*${p}glasses*
-*${p}cuckold*
-*${p}thighs*
-*${p}pussy*
-*${p}ahegao*
-*${p}uniform*
-*${p}gangbang*
-*${p}tentacles*
-*${p}manga*
-*${p}incest*
-*${p}creampie*
-*${p}anal*
-*${p}yuri* 
-*${p}hentainekogif*
-*${p}nsfwfeet*
-*${p}girlmasturbate* 
-*${p}eroneko*
-*${p}erokitsune* 
 *${p}spank*
 
 
 *🕵️🔎 𝐏𝐄𝐒𝐐𝐔𝐈𝐒𝐀 🔎🕵️*
 
 *${p}thumbzilla _mensagem_*
-*${p}xvideos _mensagem_*
 *${p}xanimu _mensagem_*
 *${p}rule34 _mensagem_*
 *${p}fapster _mensagem_*
-*${p}xnxx _mensagem_*
 *${p}thumbzilla _mensagem_*`
 }
 
@@ -971,6 +908,7 @@ ${level}
 *${p}painel*
 *${p}tm _mensagem_*
 *${p}tmgroups _mensagem_*
+*${p}adsmode _1 ou 0_*
 
 
 *🖊️🗳️ 𝐕𝐎𝐓𝐀𝐂𝐀𝐎 🗳️🖊️*
@@ -996,14 +934,12 @@ ${level}
 
 *👑⚡ 𝐏𝐑𝐈𝐍𝐂𝐈𝐏𝐀𝐈𝐒 ⚡👑*
 
-*${p}basemd*
 *${p}level*
 *${p}listblockcmd*
 *${p}listpalavra*
 *${p}info*
 *${p}ajuda* 
 *${p}help*
-*${p}oficialcriador*
 *${p}comandos*
 *${p}menu*
 *${p}ping*
@@ -1011,6 +947,68 @@ ${level}
 *${p}blacklist*
 *${p}criador*
 *${p}toimg _marcar figurinha_*`
+}
+
+const mainMenuConfig = (emojiTime, time, user, deviceTypeName, memberType, level, prefix) => {
+    return {
+        text: `*${emojiTime} Data/hora: _${time}_*
+*👱‍♂️ Usuário: _${user}_*
+*📱 Dispositivo: _${deviceTypeName}_*
+*🔰 Tipo de membro: _${memberType}_*
+*🌐 Nível: _${level}_*\n
+*Seja bem-vindo ao menu principal do 🔥SIRIUS BOT🔥, selecione a lista de comandos que deseja clicando no botão abaixo!*`,
+        footer: 'Clique no botão para ver a lista:',
+        title: '🤖 *Bem-vindo ao menu principal* 🤖',
+        buttonText: 'Ver lista de menus',
+        sections: [{
+            title: 'Lista de menus',
+            rows: [{
+                rowId: prefix+'getmenu all',
+                title: '🌐 Todos os comandos 🌐',
+                description: 'Veja todos os comandos de todas categorias'
+            },{
+                rowId: prefix+'getmenu main',
+                title: '👑 Comandos principais 👑',
+                description: 'Veja os comandos principais do bot'
+            }, {
+                rowId: prefix+'getmenu audio',
+                title: '🔊 Comandos de Áudio 🔊',
+                description: 'Baixe e edite músicas com comandos de áudio'
+            }, {
+                rowId: prefix+'getmenu sticker',
+                title: '💟 Comandos de Figurinhas 💟',
+                description: 'Crie figurinhas com comando de sticker'
+            }, {
+                rowId: prefix+'getmenu game',
+                title: '🎮 Comandos de Jogos e diversão 🎮',
+                description: 'Se divirta com seus amigos com comandos de jogos'
+            }, {
+                rowId: prefix+'getmenu consult',
+                title: '🕵️‍♂️ Comandos de consulta 🕵️‍♂️',
+                description: 'Verifique seus dados com comandos de consulta'
+            }, {
+                rowId: prefix+'getmenu search',
+                title: '🔎 Comandos de pesquisa 🔍',
+                description: 'Consulte sites com comandos de pesquisa'
+            }, {
+                rowId: prefix+'getmenu groups',
+                title: '👤 Comandos de Grupos 👤',
+                description: 'Administre sua comunidade com comandos de grupo'
+            }, {
+                rowId: prefix+'getmenu logo',
+                title: '🖍️ Comandos de Efeitos, montagens e logos 🖍️',
+                description: 'Crie montagens e logos com comando de logos'
+            }, {
+                rowId: prefix+'getmenu porn',
+                title: '🔞 Comandos 🔞',
+                description: 'A'
+            }, {
+                rowId: prefix+'getmenu owner',
+                title: '😎 Comandos do proprietário 😎',
+                description: 'Administre o bot com comandos do proprietário'
+            }]
+        }]
+    }
 }
 
 module.exports = {
@@ -1024,7 +1022,6 @@ module.exports = {
     menuaudio,
     menusearch,
     menugroups,
-    menulogo
+    menulogo,
+    mainMenuConfig
 }
-
-
