@@ -93,7 +93,7 @@ let mess = {
     only: {
         group: 'Infelizmente este comando está disponível somente para grupos meu caro! 🚫',
         ownerG: 'Este comando somente meu chefe pode usar! 🚫',
-        ownerB: 'Este comando somente meu chefe pode usar! 🚫',
+        ownerB: 'Este comando somente o grupo do meu chefe pode usar! 🚫',
         admin: 'Se ponha no seu lugar membro comum 🚫',
         Badmin: 'Não sou administrador desse grupo, não posso fazer nada 🚫',
     }
@@ -159,7 +159,20 @@ ${prefix}broadvoto
 ${prefix}votobroad - Faz uma transmissão da votação para todos que usam o bot`
 }
 
+// a quantidade de comandos necessários para aparecer uma propaganda
+const adsShowCount = 8
+
+// Lista de propagandas a ser aparecidas
+const adsArray = [
+    '*Você quer ter o Sirius bot no seu grupo do whatsapp? Agora é possível! Negocie com meu proprietário clicando no link https://wa.me/557592789800*\n\n*Obs: O bot somente é adicionado caso você seja administrador do grupo*',
+    `*Sabia que dá para jogar o jogo friday night funkin e disputar seu recorde contra outros jogadores do bot? Basta da o comando ${prefixs[0]}fnf para saber mais*`,
+    `*Baixe playlist e mixes do youtube com o comando ${prefixs[0]}playlist _link da playlist_*`,
+    `*Administre seu grupo da melhor forma, entretenha seus membros. Alugue o bot no seu grupo*\n*Negocie com meu proprietário https://wa.me/557592789800*\n\n*Obs: O bot somente é adicionado caso você seja administrador do grupo*`
+]
+
 // Nem ouse mexer aqui se n quiser que de erro
+exports.adsShowCount = adsShowCount
+exports.adsArray = adsArray
 exports.registeruser = registeruser
 exports.gpvotohelp = gpvotohelp
 exports.votohelp = votohelp
